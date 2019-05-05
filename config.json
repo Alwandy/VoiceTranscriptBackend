@@ -1,0 +1,4 @@
+{
+    "connectionString": "mongodb://voicetranscripthub:T7BgcrrKUyMJD3tNFfjPiiVdHKhO4pmcoTq6si802lFVohOUhjmz8iDf7FcMRm1m0tFuN7pL8jXgJMj6CZFTbw==@voicetranscripthub.documents.azure.com:10255/VoiceTranscriptHub?ssl=true&replicaSet=globaldb",
+    "secret": "ig0Jw8d3t5Scq3oDUVzl"
+}
