@@ -1,10 +1,12 @@
 require('rootpath')();
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('_helpers/jwt');
 const errorHandler = require('_helpers/error-handler');
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -15,6 +17,7 @@ app.use(jwt());
 
 // api routes
 app.use('/users', require('./users/users.controller'));
+app.use('/recordings', require('./recordings/recordings.controller'));
 
 // global error handler
 app.use(errorHandler);
